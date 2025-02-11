@@ -40,7 +40,7 @@ jobs:
 
     - name: Build Docker Image
       run : |
-        docker build -t godak672/springbootdocker:2.0 ./SpringBootApp -t godak672/springbootdocker:latest
+        docker build -t godak672/springbootdocker:2.0 . -t godak672/springbootdocker:latest
 
     - name: Push Docker Images to Docker Hub
       run: |
